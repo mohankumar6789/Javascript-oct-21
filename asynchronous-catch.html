@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>JavaScript Asynchronous Catch</title>
+    <script>
+        const promise1 = new Promise((resolve, reject) => {
+            throw 'Asynchrous Catch Error!';
+        });
+        promise1.catch((error) => {
+            console.error(error);
+        });
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <h1>JavaScript Asynchronous Catch</h1>
+</body>
+</html>

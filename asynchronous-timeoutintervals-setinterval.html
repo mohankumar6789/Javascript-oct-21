@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>JavaScript Timeout Interval Settimeout</title>
+    <script>
+        function displayTime() {
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            document.getElementById('demo').textContent = time;
+        }
+        const createClock = setInterval(displayTime, 1000);
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <p>JavaScript Timeout Interval Settimeout</p>
+    <div id="demo"></div>
+</body>
+</html>

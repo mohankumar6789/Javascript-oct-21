@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>JavaScript Asynchronous Promises</title>
+    <script>
+        new Promise(function (resolve, reject) {
+            setTimeout(() => resolve(1), 1000); 
+        }).then(function (result) { 
+            alert(result); 
+            return result * 2;
+        }).then(function (result) { 
+            alert(result); 
+            return result * 2;
+        }).then(function (result) {
+            alert(result); 
+            return result * 2;
+        });
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <h1>JavaScript Asynchronous Promises</h1>
+</body>
+</html>

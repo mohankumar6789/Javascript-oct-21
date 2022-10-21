@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>JavaScript Timeout Interval Settimeout</title>
+    <script>
+        var timeoutID;
+        function delayedAlert() {
+            timeoutID = window.setTimeout(window.alert, 500, 'Welcome to Javascript language!');
+        }
+        function clearAlert() {
+            window.clearTimeout(timeoutID);
+        }
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <p>JavaScript Timeout Interval Settimeout</p>
+    <div style="display: flex; Justify-content: flex-start;">
+        <button style="margin-right: 10px;" onclick="delayedAlert();">Show an alert box after one seconds</button>
+        <button onclick="clearAlert();">Cancel alert before it happens</button>
+    </div>
+</body>
+</html>

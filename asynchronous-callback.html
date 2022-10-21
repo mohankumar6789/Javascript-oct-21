@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>JavaScript Asynchronous Callback</title>
+    <script>
+        document.writeln("<b>JavaScript Asynchronous Callback</b>");
+        document.writeln("<br>");
+        document.writeln("<br>");
+        function callback() {
+            document.writeln('<b>Welcome to Javascript language</b>');
+        }
+        function sayName(name) {
+            document.writeln('Hello' + ' ' + name);
+        }
+        setTimeout(callback, 1500);
+        sayName('Mohan kumar');
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+</body>
+</html>

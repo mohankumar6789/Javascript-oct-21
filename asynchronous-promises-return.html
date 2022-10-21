@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>JavaScript Asynchronous Returing Promises</title>
+    <script>
+        new Promise(function (resolve, reject) {
+            setTimeout(() => resolve(1), 5000);
+        }).then(function (result) {
+            alert(result);
+            return new Promise((resolve, reject) => { 
+                setTimeout(() => resolve(result * 2), 5000);
+            });
+        }).then(function (result) { 
+            alert(result); 
+            return new Promise((resolve, reject) => {
+                setTimeout(() => resolve(result * 2), 5000);
+            });
+        }).then(function (result) {
+            alert(result); 
+        });
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Asynchronous Returing Promises</h1>
+</body>
+
+</html>

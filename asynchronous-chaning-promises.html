@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>JavaScript Asynchronous Chaning Promises</title>
+    <script>
+        const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+        fetchPromise
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                document.writeln("<b>JavaScript Asynchronous Chaning Promises</b>");
+                document.writeln("<br>");
+                document.writeln("<br>");
+                document.writeln(data[3].name);
+            });
+    </script>
+</head>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Asynchronous Promises</h1>
+</body>
+
+</html>
